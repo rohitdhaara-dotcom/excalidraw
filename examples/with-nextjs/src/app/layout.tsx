@@ -1,4 +1,3 @@
-import "@excalidraw/excalidraw/index.css";
 export default function RootLayout({
   children,
 }: {
@@ -6,6 +5,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Bypass Next.js bundler and load CSS directly */}
+        <link rel="stylesheet" href="https://unpkg.com/@excalidraw/excalidraw/index.css" />
+      </head>
       <body>{children}</body>
     </html>
   );
