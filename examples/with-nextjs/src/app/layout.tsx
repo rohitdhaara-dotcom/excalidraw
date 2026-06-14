@@ -7,7 +7,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Bypass Next.js bundler and load CSS directly */}
-        <link rel="stylesheet" href="https://unpkg.com/@excalidraw/excalidraw/index.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw/dist/prod/index.css" />
       </head>
       <body>{children}</body>
     </html>
