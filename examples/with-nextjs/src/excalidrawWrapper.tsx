@@ -1,14 +1,4 @@
 "use client";
-import { Excalidraw } from "@excalidraw/excalidraw";
-
-export default function ExcalidrawWrapper() {
-  return (
-    <div style={{ height: "100vh", width: "100%" }}>
-      <Excalidraw />
-    </div>
-  );
-}
-"use client";
 import dynamic from "next/dynamic";
 
 // Dynamically import Excalidraw and force Next.js to skip Server-Side Rendering
